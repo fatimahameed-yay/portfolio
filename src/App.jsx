@@ -433,6 +433,27 @@ export default function App() {
             </article>
           ))}
         </div>
+        <div className="experience-certifications" data-reveal>
+          <h3>AWS CERTIFICATIONS</h3>
+          <ul>
+            <li>
+              <img
+                src="/aws-certified-cloud-practitioner.png"
+                alt="AWS Certified Cloud Practitioner badge"
+                loading="lazy"
+              />
+              <span>AWS Certified Cloud Practitioner</span>
+            </li>
+            <li>
+              <img
+                src="/aws-certified-ai-practitioner.png"
+                alt="AWS Certified AI Practitioner badge"
+                loading="lazy"
+              />
+              <span>AWS Certified AI Practitioner</span>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section className="content-section skills-section">

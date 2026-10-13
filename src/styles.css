@@ -857,6 +857,55 @@ body {
   white-space: nowrap;
 }
 
+.experience-certifications {
+  margin-top: 32px;
+}
+
+.experience-certifications > h3 {
+  margin: 0 0 14px;
+  color: #85867c;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.experience-certifications ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-certifications li {
+  display: flex;
+  min-width: 0;
+  min-height: 106px;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 20px;
+  border: 1px solid #e8e3da;
+  border-radius: 16px;
+  background: #fffdfa;
+  box-shadow: 0 8px 24px rgb(60 57 48 / 4%);
+}
+
+.experience-certifications img {
+  display: block;
+  width: 76px;
+  height: 76px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.experience-certifications li span {
+  color: #41443c;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
 .skills-section {
   position: relative;
   isolation: isolate;
@@ -1292,6 +1341,30 @@ body {
 
   .experience-main > p {
     font-size: 10px;
+  }
+
+  .experience-certifications {
+    margin-top: 26px;
+  }
+
+  .experience-certifications ul {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .experience-certifications li {
+    min-height: 92px;
+    gap: 14px;
+    padding: 10px 14px;
+  }
+
+  .experience-certifications img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .experience-certifications li span {
+    font-size: 13px;
   }
 
   .capability-grid {

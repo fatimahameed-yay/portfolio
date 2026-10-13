@@ -1,4 +1,4 @@
-# Fatima Hameed — portfolio
+# Fatima Hameed portfolio
 
 ## Run the portfolio
 

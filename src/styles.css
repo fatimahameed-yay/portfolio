@@ -1253,21 +1253,37 @@ body {
   }
 
   .experience-item {
-    grid-template-columns: 27px minmax(0, 1fr);
-    gap: 8px;
+    grid-template-columns: 25px minmax(0, 1fr);
+    grid-template-areas:
+      "number period"
+      "number main";
+    gap: 0 9px;
     padding: 22px 0;
   }
 
+  .experience-item:hover {
+    padding-inline: 0;
+  }
+
+  .experience-number {
+    grid-area: number;
+  }
+
+  .experience-main {
+    grid-area: main;
+    min-width: 0;
+  }
+
   .experience-period {
-    grid-column: 2;
-    grid-row: 1;
+    grid-area: period;
     justify-self: start;
-    padding-top: 0;
+    padding: 0 0 7px;
     text-align: left;
+    white-space: normal;
   }
 
   .experience-title {
-    margin-top: 7px;
+    gap: 5px 8px;
   }
 
   .experience-title h3 {

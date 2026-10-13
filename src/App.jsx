@@ -20,6 +20,7 @@ const projects = [
     domain: "myaeo.app",
     url: "https://myaeo.app/",
     screenshot: "/screenshots/myAEO.png",
+    livePreview: false,
     category: "AI visibility",
     description:
       "A clear, data-led dashboard for tracking how brands appear across AI search.",
@@ -102,15 +103,15 @@ const projects = [
 const experience = [
   {
     role: "UI/UX Designer & Frontend Developer",
-    company: "NCRA–UAV Lab",
-    period: "Jun 2025 — Aug 2025",
+    company: "NCRA-UAV Lab",
+    period: "Jun 2025 - Aug 2025",
     description:
       "Designed an end-to-end ground-control system experience, from user research and task flows to wireframes and high-fidelity prototypes. Built responsive React interfaces for live telemetry, dashboards, and operator tools.",
   },
   {
     role: "AI Application Developer",
     company: "BooSend · Freelance",
-    period: "2025 — Present",
+    period: "2025 - Present",
     description:
       "Designed and shipped an AI outreach product spanning a React Native app and marketing website, with user flows, wireframes, prototypes, and frontend implementation.",
   },
@@ -283,7 +284,7 @@ export default function App() {
           <p className="greeting">Hi, I&apos;m</p>
           <h1 id="intro-title">Fatima Hameed</h1>
           <p className="intro-copy">
-            I turn thoughtful design into polished digital products — blending
+            I turn thoughtful design into polished digital products, blending
             user-first interfaces with frontend that feels as good as it looks.
           </p>
           <div className="hero-actions">
@@ -303,7 +304,7 @@ export default function App() {
 
         <div className="hero-footer" aria-hidden="true">
           <span>Design with a little more feeling</span>
-          <span className="footer-index">01 — PORTFOLIO</span>
+          <span className="footer-index">01 - PORTFOLIO</span>
           <span className="scroll-note">Scroll to explore ↓</span>
         </div>
       </section>
@@ -394,18 +395,13 @@ export default function App() {
           <span className="card-index">01 / EDUCATION</span>
           <h3>Building a strong foundation.</h3>
           <div className="education-item">
-            <span className="education-year">Expected 2026</span>
+            <span className="education-year">2026</span>
             <h4>BS Computer Science</h4>
             <p>FAST-NUCES, Islamabad</p>
             <span className="education-honour">
               Dean&apos;s List · Federal Government Merit Scholar · Silver Medal
               Holder
             </span>
-          </div>
-          <div className="education-item">
-            <span className="education-year">2022</span>
-            <h4>F.Sc. — ICS</h4>
-            <p>Fazia Inter College · 95%</p>
           </div>
         </div>
       </section>
@@ -456,7 +452,7 @@ export default function App() {
         </div>
         <p className="certifications">
           AWS Academy Cloud Foundations · Federal Government Merit Scholarship
-          (2022–2026)
+          (2022 to 2026)
         </p>
       </section>
 

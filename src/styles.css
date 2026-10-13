@@ -881,7 +881,7 @@ body {
 .experience-certifications li {
   display: flex;
   min-width: 0;
-  min-height: 106px;
+  min-height: 210px;
   align-items: center;
   gap: 18px;
   padding: 14px 20px;
@@ -893,8 +893,8 @@ body {
 
 .experience-certifications img {
   display: block;
-  width: 76px;
-  height: 76px;
+  width: 180px;
+  height: 180px;
   flex: 0 0 auto;
   object-fit: contain;
 }
@@ -1353,18 +1353,15 @@ body {
   }
 
   .experience-certifications li {
-    min-height: 92px;
-    gap: 14px;
-    padding: 10px 14px;
-  }
-
-  .experience-certifications img {
-    width: 68px;
-    height: 68px;
+    min-height: 0;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px 14px;
   }
 
   .experience-certifications li span {
     font-size: 13px;
+    text-align: center;
   }
 
   .capability-grid {

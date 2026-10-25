@@ -104,38 +104,14 @@ const experience = [
   {
     role: "UI/UX Designer & Frontend Developer",
     company: "NCRA-UAV Lab",
-    period: "Jun 2025 - Aug 2025",
     description:
-      "Designed an end-to-end ground-control system experience, from user research and task flows to wireframes and high-fidelity prototypes. Built responsive React interfaces for live telemetry, dashboards, and operator tools.",
+      "Designed workflows and built responsive React dashboards for live telemetry and operator tools.",
   },
   {
-    role: "AI Application Developer",
-    company: "BooSend · Freelance",
-    period: "2025 - Present",
+    role: "Frontend Engineer",
+    company: "Mentor LLC",
     description:
-      "Designed and shipped an AI outreach product spanning a React Native app and marketing website, with user flows, wireframes, prototypes, and frontend implementation.",
-  },
-  {
-    role: "AI Systems Researcher",
-    company: "Independent",
-    period: "2025",
-    description:
-      "Prototyped a real-time AI teaching avatar with multimodal interaction, exploring conversational UX, voice, and vision for scalable learning.",
-  },
-];
-
-const capabilities = [
-  {
-    title: "Product & UI/UX",
-    items: "User research · Wireframing · Interaction design · Prototyping · Usability testing · Responsive design",
-  },
-  {
-    title: "Frontend",
-    items: "React · Next.js · React Native · JavaScript · TypeScript · HTML5 · CSS3 · Tailwind CSS",
-  },
-  {
-    title: "AI & engineering",
-    items: "LLMs · Agentic pipelines · LangGraph · RAG · Python · FastAPI · REST APIs · PostgreSQL · MongoDB",
+      "Developed responsive web interfaces and frontend features for Mentor LLC.",
   },
 ];
 
@@ -266,8 +242,8 @@ export default function App() {
           </a>
           <nav className="navigation" aria-label="Main navigation">
             <a href="#work">Work</a>
-            <a href="#about">About</a>
             <a href="#experience">Experience</a>
+            <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
           </nav>
           <span className="availability">
@@ -278,7 +254,6 @@ export default function App() {
 
         <section className="intro">
           <p className="eyebrow">
-            <span className="eyebrow-line" />
             UI/UX designer · Frontend developer
           </p>
           <p className="greeting">Hi, I&apos;m</p>
@@ -290,11 +265,9 @@ export default function App() {
           <div className="hero-actions">
             <a
               className="button button-primary"
-              href="/Fatima-Hameed-CV.pdf"
-              target="_blank"
-              rel="noreferrer"
+              href="#contact"
             >
-              View my CV <ArrowIcon />
+              Let&apos;s connect <ArrowIcon />
             </a>
             <a className="button button-secondary" href="#work">
               Explore my work
@@ -312,7 +285,7 @@ export default function App() {
       <section className="content-section projects-section" id="work">
         <div className="section-heading" data-reveal>
           <div>
-            <h2>Things I&apos;ve helped bring to life<span>.</span></h2>
+            <h2>Projects I&apos;ve given a new identity to<span>.</span></h2>
           </div>
           <p className="section-aside">
             A little product thinking, a lot of attention to detail.
@@ -333,95 +306,22 @@ export default function App() {
             </article>
           ))}
         </div>
-        <div className="research-projects">
-          <div className="research-grid" data-reveal>
-            <article>
-              <span>AI · MULTI-AGENT SYSTEMS</span>
-              <h3>AI Film Montage Pipeline</h3>
-              <p>
-                A multi-agent workflow that turns story prompts into
-                storyboards, generated scenes, and a finished audiovisual
-                montage.
-              </p>
-            </article>
-            <article>
-              <span>RESEARCH · RECOMMENDATION</span>
-              <h3>Research Paper Discovery</h3>
-              <p>
-                A semantic paper-discovery experience using RAG and SBERT to
-                surface relevant research across large academic collections.
-              </p>
-            </article>
-            <article>
-              <span>FULL-STACK · READING</span>
-              <h3>Book Reading Platform</h3>
-              <p>
-                A full-stack reading app for progress tracking, bookmarks, and
-                reader reviews, built around an accessible experience.
-              </p>
-            </article>
-            <article>
-              <span>REINFORCEMENT LEARNING · TORCS</span>
-              <h3>Autonomous Racing Controller</h3>
-              <p>
-                A Q-learning controller trained to navigate a racing simulator,
-                avoid collisions, and improve lap times.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section className="content-section about-section" id="about">
-        <div className="about-copy" data-reveal>
-          <h2>Design-minded.<br />Curious by nature.</h2>
-          <p>
-            I&apos;m Fatima, a UI/UX designer and frontend developer based in
-            Islamabad. I love making complex products feel clear, considered,
-            and genuinely enjoyable to use.
-          </p>
-          <p>
-            My work moves between user research, wireframes, prototypes, and
-            production-ready interfaces. Lately, I&apos;ve been especially
-            interested in AI products and the thoughtful experiences that make
-            new technology feel human.
-          </p>
-          <a className="text-link" href="mailto:itsfatimahameed99@gmail.com">
-            Have a project in mind? Let&apos;s talk <ArrowIcon />
-          </a>
-        </div>
-
-        <div className="education-card" data-reveal>
-          <span className="card-index">01 / EDUCATION</span>
-          <h3>Building a strong foundation.</h3>
-          <div className="education-item">
-            <span className="education-year">2026</span>
-            <h4>BS Computer Science</h4>
-            <p>FAST-NUCES, Islamabad</p>
-            <span className="education-honour">
-              Dean&apos;s List · Federal Government Merit Scholar · Silver Medal
-              Holder
-            </span>
-          </div>
-        </div>
       </section>
 
       <section className="content-section experience-section" id="experience">
         <div className="section-heading" data-reveal>
           <div>
-            <h2>Experience &amp; practice<span>.</span></h2>
+            <h2>Experience<span>.</span></h2>
           </div>
           <p className="section-aside">
-            Thoughtful interfaces, grounded in how people actually work.
+            Frontend engineering and product design.
           </p>
         </div>
 
         <div className="experience-list" data-reveal>
           {experience.map((item, index) => (
-            <article className="experience-item" key={item.role} data-reveal>
-              <span className="experience-number">
-                0{index + 1}
-              </span>
+            <article className="experience-item" key={item.role}>
+              <span className="experience-number">0{index + 1}</span>
               <div className="experience-main">
                 <div className="experience-title">
                   <h3>{item.role}</h3>
@@ -429,12 +329,15 @@ export default function App() {
                 </div>
                 <p>{item.description}</p>
               </div>
-              <span className="experience-period">{item.period}</span>
             </article>
           ))}
         </div>
+        <div className="frontend-stack" data-reveal>
+          <span>FRONTEND</span>
+          <p>React · Next.js · TypeScript · JavaScript · HTML · CSS · Tailwind</p>
+        </div>
         <div className="experience-certifications" data-reveal>
-          <h3>AWS CERTIFICATIONS</h3>
+          <h3>CERTIFICATIONS</h3>
           <ul>
             <li>
               <img
@@ -456,25 +359,19 @@ export default function App() {
         </div>
       </section>
 
-      <section className="content-section skills-section">
+      <section className="content-section reviews-section" id="reviews">
         <div className="section-heading" data-reveal>
           <div>
-            <h2>Design meets detail<span>.</span></h2>
+            <h2>Reviews<span>.</span></h2>
           </div>
         </div>
-        <div className="capability-grid" data-reveal>
-          {capabilities.map((capability, index) => (
-            <article className="capability-card" key={capability.title}>
-              <span className="card-index">0{index + 1}</span>
-              <h3>{capability.title}</h3>
-              <p>{capability.items}</p>
-            </article>
-          ))}
-        </div>
-        <p className="certifications">
-          AWS Academy Cloud Foundations · Federal Government Merit Scholarship
-          (2022 to 2026)
-        </p>
+        <blockquote className="review-placeholder" data-reveal>
+          <span className="review-quote-mark" aria-hidden="true">“</span>
+          <div>
+            <p>A thoughtful review will be featured here soon.</p>
+            <cite>Placeholder testimonial</cite>
+          </div>
+        </blockquote>
       </section>
 
       <footer className="contact-section" id="contact">
